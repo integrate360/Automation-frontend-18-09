@@ -1,0 +1,151 @@
+.footer,
+.logoFull1 {
+  position: absolute;
+  top: 0;
+}
+.footer {
+  left: 0;
+  background-color: var(--color-black);
+  min-width: 1600px;
+  height: 288px;
+}
+.logoFull1 {
+  left: 99px;
+  width: 261px;
+  height: 190px;
+  object-fit: cover;
+}
+.aboutUs {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  font-weight: 600;
+}
+.industrialAutomationIs {
+  position: absolute;
+  top: 193px;
+  left: 100px;
+  font-size: var(--font-size-3xs);
+  text-align: left;
+  display: inline-block;
+  width: 260px;
+  height: 67px;
+}
+.groupChild {
+  position: absolute;
+  top: 182.5px;
+  left: 99.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 261px;
+  height: 1px;
+}
+.quickLinks {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-weight: 600;
+}
+.buySubscription {
+  margin: 0;
+}
+.buySubscriptionMagazineContainer {
+  position: absolute;
+  top: 39px;
+  left: 15px;
+  font-size: var(--font-size-xs);
+  text-align: left;
+  display: inline-block;
+  width: 98px;
+}
+.groupItem {
+  position: absolute;
+  top: 29.5px;
+  left: -0.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 153px;
+  height: 1px;
+}
+.quickLinksParent {
+  position: absolute;
+  top: 20px;
+  left: 504px;
+  width: 152px;
+  height: 219px;
+}
+
+.aboutUsParent {
+  position: absolute;
+  top: 20px;
+  left: 504px;
+  width: 152px;
+  height: 219px;
+}
+.advertisement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+}
+.interviewsCoverStoryContainer {
+  position: absolute;
+  top: 39px;
+  left: 30px;
+  font-size: var(--font-size-xs);
+  text-align: left;
+  display: inline-block;
+  width: 122px;
+}
+.groupInner {
+  position: absolute;
+  top: 29.5px;
+  left: 14.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 153px;
+  height: 1px;
+}
+.advertisementParent {
+  position: absolute;
+  top: 20px;
+  left: 786px;
+  width: 167px;
+  height: 129px;
+}
+.company {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-weight: 600;
+}
+.aboutUsEditorialContainer {
+  position: absolute;
+  top: 39px;
+  left: 15px;
+  font-size: var(--font-size-xs);
+  text-align: left;
+}
+.companyParent,
+.footerParent {
+  position: absolute;
+  top: 20px;
+  left: 1098px;
+  width: 152px;
+  height: 147px;
+}
+.footerParent {
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 288px;
+}
+.groupParent {
+  position: relative;
+  width: 100%;
+  height: 288px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

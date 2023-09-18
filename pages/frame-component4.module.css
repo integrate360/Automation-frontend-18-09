@@ -1,0 +1,50 @@
+.featuredProductsChild {
+  position: absolute;
+  top: 84px;
+  left: 46px;
+  background-color: var(--color-gainsboro);
+  width: 1148px;
+  height: 405px;
+}
+.blogSubtitle,
+.blogTitle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 240px;
+}
+.blogTitle {
+  top: 416px;
+  font-weight: 600;
+  height: 29.67px;
+}
+.blogSubtitle {
+  top: 449.63px;
+  font-size: var(--font-size-mini);
+  height: 26.37px;
+}
+.featuredProducts,
+.featuredProducts1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+}
+.featuredProducts1 {
+  font-size: var(--font-size-21xl);
+  font-weight: 600;
+  display: inline-block;
+}
+.featuredProducts {
+  height: 725.51px;
+  left: 10%;
+}
+.featuredProductsParent {
+  position: relative;
+  width: 100%;
+  height: 725.51px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

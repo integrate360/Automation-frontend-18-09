@@ -1,0 +1,148 @@
+.eventsChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 138.5px 0 0 0;
+  background-color: var(--color-firebrick);
+  width: 1600px;
+  height: 277px;
+}
+.events1,
+.subtitle {
+  position: absolute;
+  left: 37px;
+}
+.events1 {
+  top: 86px;
+  font-weight: 600;
+}
+.subtitle {
+  top: 146px;
+  font-size: var(--font-size-6xl);
+}
+.groupChild,
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.groupChild {
+  border-radius: var(--br-6xl);
+  background-color: var(--color-white);
+  width: 301px;
+  height: 250px;
+}
+.groupItem {
+  border-radius: var(--br-xl);
+  width: 274px;
+  height: 164px;
+  object-fit: cover;
+}
+.blogSubtitle,
+.blogTitle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 274px;
+}
+.blogTitle {
+  top: 172px;
+  font-weight: 600;
+  height: 33.87px;
+}
+.blogSubtitle {
+  top: 206px;
+  font-size: var(--font-size-mini);
+  height: 30.11px;
+}
+.rectangleGroup {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 274px;
+  height: 236.11px;
+}
+.rectangleIcon,
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 301px;
+  height: 250px;
+}
+.rectangleIcon {
+  left: 5px;
+  border-radius: var(--br-xl);
+  width: 264px;
+  height: 159px;
+  object-fit: cover;
+}
+.blogTitle1 {
+  top: 169.51px;
+  left: 0;
+  font-weight: 600;
+  display: inline-block;
+  height: 33.87px;
+}
+.blogSubtitle1,
+.blogTitle1,
+.groupDiv {
+  position: absolute;
+  width: 274px;
+}
+.blogSubtitle1 {
+  top: 203.51px;
+  left: 0;
+  font-size: var(--font-size-mini);
+  display: inline-block;
+  height: 30.11px;
+}
+.groupDiv {
+  top: 13.49px;
+  left: 12px;
+  height: 233.62px;
+}
+.rectangleContainer {
+  position: absolute;
+  top: 0;
+  left: 329px;
+  width: 301px;
+  height: 250px;
+}
+.groupParent,
+.rectangleParent1,
+.rectangleParent3 {
+  position: absolute;
+  top: 0;
+  left: 658px;
+  width: 301px;
+  height: 250px;
+}
+.groupParent,
+.rectangleParent3 {
+  left: 985px;
+}
+.groupParent {
+  top: 14px;
+  left: 248px;
+  width: 1286px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.events {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1534px;
+  height: 277px;
+}
+.eventsParent {
+  position: relative;
+  width: 100%;
+  height: 277px;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

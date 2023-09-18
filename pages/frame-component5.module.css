@@ -1,0 +1,55 @@
+.brandFocusChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-firebrick);
+  max-width: 1519px;
+  min-width: 1600px;
+  height: 468px;
+}
+.brandFocus1 {
+  position: absolute;
+  top: 27px;
+  left: 10%;
+  font-weight: 600;
+  display: inline-block;
+  width: 1240px;
+}
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 470px;
+  height: 286px;
+  object-fit: cover;
+}
+.brandFocus,
+.groupParent,
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 516px;
+  width: 831.5px;
+  height: 292px;
+}
+.brandFocus,
+.rectangleParent {
+  top: 113px;
+  left: 5%;
+  width: 1347.5px;
+}
+.brandFocus {
+  top: 0;
+  left: 0;
+  width: 1441px;
+  height: 468px;
+}
+.brandFocusParent {
+  position: relative;
+  width: 100%;
+  height: 468px;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

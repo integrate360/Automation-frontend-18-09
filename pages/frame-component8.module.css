@@ -1,0 +1,78 @@
+.component {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+.articles1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  display: inline-block;
+  width: 1240px;
+}
+.groupChild,
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 0.08px;
+  width: 400.36px;
+  height: 278.06px;
+  object-fit: cover;
+}
+.groupItem {
+  left: 420.3px;
+  width: 401.41px;
+  height: 442.17px;
+}
+.groupChild1,
+.groupInner,
+.maskGroupIcon,
+.rectangleIcon {
+  position: absolute;
+  top: 295.83px;
+  left: 841.56px;
+  width: 400.36px;
+  height: 442.17px;
+  object-fit: cover;
+}
+.groupChild1,
+.groupInner,
+.rectangleIcon {
+  left: 0.08px;
+}
+.groupChild1,
+.rectangleIcon {
+  top: 0;
+  left: 841.56px;
+  height: 282.24px;
+}
+.groupChild1 {
+  top: 455.76px;
+  left: 420.3px;
+  width: 401.41px;
+}
+.articles,
+.rectangleParent {
+  position: absolute;
+  top: 87px;
+  left: 1px;
+  width: 1242px;
+  height: 738.49px;
+}
+.articles {
+  top: 0;
+  left: 0;
+  width: 1243px;
+  height: 825.49px;
+}
+.articlesParent {
+  position: relative;
+  width: 100%;
+  height: 825.49px;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
