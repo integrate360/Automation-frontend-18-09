@@ -50,7 +50,7 @@ const HomeAds = () => {
           <a href={ad.link} target="_blank" rel="noopener noreferrer">
             <img
               src={ad.image}
-              alt={ad.title}
+              alt={ad.name}
               style={{
                 width: "100%",
                 height: "100%",

@@ -6,16 +6,11 @@ const HeaderAds = () => {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
-    // Define your API URL here
     const api = `${apiUrl}/api/headerads/allads`;
 
-    // Fetch the latest ad
     axios.get(api).then((response) => {
-      // Assuming your API returns ad data in the response.data object
       const latestAd = response.data;
       console.log('latestAd::: ', latestAd);
-
-      // Set the ad in the state
       setAd(latestAd);
     });
   }, []);
@@ -24,6 +19,7 @@ const HeaderAds = () => {
     <div className="header-ad">
       {ad ? (
         <div>
+          {ad.name}
           <img
             src={ad[0].image}
             alt="Ad"
