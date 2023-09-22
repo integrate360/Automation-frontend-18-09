@@ -94,6 +94,11 @@ const Header = () => {
                 Terms & Conditions
               </a>
             </div>
+            <div className={sidebarStyles.navbarItem}>
+              <a href="/mediapartner" className={sidebarStyles.navLink}>
+                Media Partner
+              </a>
+            </div>
           </div>
         </div>
         {/* Menu Items */}
