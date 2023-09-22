@@ -13,7 +13,6 @@ const Article = ({ blogs }) => {
   const router = useRouter();
   const [hoveredBlogId, setHoveredBlogId] = useState(null); // Track the hovered blog ID
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-  console.log("apiUrl::: ", apiUrl);
   // const FileArray = [];
 
   // console.log(FileArray, "array"); // Change this value based on the number of blogs you want to display per page

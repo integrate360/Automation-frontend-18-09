@@ -3,15 +3,17 @@ import axios from "axios";
 import styles from "./frame-component4.module.css";
 import { useRouter } from "next/router";
 
-
 const FrameComponent4 = () => {
   const [blogs, setBlogs] = useState([]);
+  const [ad, setAd] = useState(null);
+  console.log("ads::: ", ad);
   const blogsPerPage = 4;
   const [currentPage, setCurrentPage] = useState(1);
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   const carouselRef = useRef(null);
-  const router = useRouter(); 
-  const defaultImage = "https://wwwd601d2yq4c.cdn.e2enetworks.net/ia-log-2020.png";
+  const router = useRouter();
+  const defaultImage =
+    "https://wwwd601d2yq4c.cdn.e2enetworks.net/ia-log-2020.png";
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -24,6 +26,17 @@ const FrameComponent4 = () => {
     };
 
     fetchBlogs();
+    const fetchAd = async () => {
+      // Change from fetchAds to fetchAd
+      try {
+        const response = await axios.get(`${apiUrl}/api/mainads/Featured Ads`);
+        setAd(response.data[0]); // Set only the first ad
+      } catch (error) {
+        console.error("Error fetching ad:", error);
+      }
+    };
+
+    fetchAd();
   }, []);
 
   const totalPages = Math.ceil(blogs.length / blogsPerPage);
@@ -41,7 +54,6 @@ const FrameComponent4 = () => {
     router.push(`/category/products?id=${blogId}`);
   };
 
-
   const handleNextClick = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
@@ -57,8 +69,12 @@ const FrameComponent4 = () => {
     const visibleBlogs = blogs.slice(startIndex, endIndex);
 
     return visibleBlogs.map((blog, index) => (
-      <div key={index} className={styles.rectangleParent} onClick={() => handleBlogClick(blog.id)}>
-         <img
+      <div
+        key={index}
+        className={styles.rectangleParent}
+        onClick={() => handleBlogClick(blog.id)}
+      >
+        <img
           className={styles.groupChild}
           alt=""
           src={blog.image || defaultImage} // Use the blog's image or default placeholder image
@@ -81,17 +97,22 @@ const FrameComponent4 = () => {
     <div className={styles.featuredContentParent}>
       <div className={styles.featuredContent}>
         <h1 className={styles.featuredContent1}>Featured Products</h1>
-          <div>
-          <div >
-         < img className={styles.featuredProductsChild} alt="Ads" src="https://wwwd601d2yq4c.cdn.e2enetworks.net/content/products/1694774909Pix1.jpg" style={{objectFit:"fill", height:"500px", width:"1100px"}}/>
-        </div>
-          </div>
+
+        {ad && (
+          <img
+            className={styles.featuredProductsChild}
+            alt="Ad"
+            style={{ objectFit: "fill", height: "500px", width: "1100px" }}
+            src={ad.image || defaultImage}
+          />
+        )}
+
         <div className={styles.carouselContainer}>
           <button
             className={`${styles.carouselButton1} prev`}
             onClick={handlePrevClick}
           >
-            &lt; 
+            &lt;
           </button>
           <div className={styles.carouselWrapper} ref={carouselRef}>
             {renderBlogs()}
@@ -100,7 +121,7 @@ const FrameComponent4 = () => {
             className={`${styles.carouselButton2} next`}
             onClick={handleNextClick}
           >
-             &gt;
+            &gt;
           </button>
         </div>
         <div className={styles.featuredContentChild}>

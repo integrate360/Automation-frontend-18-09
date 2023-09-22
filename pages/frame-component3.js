@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import { useRouter } from "next/router"; // Import the useRouter hook
+import { useRouter } from "next/router"; 
 import styles from "./frame-component3.module.css";
 
 const FrameComponent3 = () => {
@@ -9,7 +9,7 @@ const FrameComponent3 = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   const carouselRef = useRef(null);
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter(); 
 
   const defaultImage =
     "https://wwwd601d2yq4c.cdn.e2enetworks.net/ia-log-2020.png";
@@ -33,7 +33,6 @@ const FrameComponent3 = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     } else {
-      // If on the first page, loop to the last page
       setCurrentPage(totalPages);
     }
   };
@@ -42,12 +41,10 @@ const FrameComponent3 = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     } else {
-      // If on the last page, loop to the first page
       setCurrentPage(1);
     }
   };
 
-  // Handle blog click and redirect to the /category/article route
   const handleBlogClick = (blogId) => {
     router.push(`/category/news?id=${blogId}`);
   };
@@ -61,7 +58,7 @@ const FrameComponent3 = () => {
       <div
         key={index}
         className={styles.rectangleParent}
-        onClick={() => handleBlogClick(blog.id)} // Add click event to redirect
+        onClick={() => handleBlogClick(blog.id)} 
       >
         <img
           className={styles.groupChild}
@@ -104,7 +101,6 @@ const FrameComponent3 = () => {
           </button>
         </div>
         <div className={styles.featuredContentChild}>
-          {/* ... (navigation buttons, same as before) */}
         </div>
       </div>
     </div>
