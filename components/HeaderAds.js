@@ -20,11 +20,13 @@ const HeaderAds = () => {
       {ad ? (
         <div>
           {ad.name}
+          <a href={ad.link} target="_blank" rel="noopener noreferrer">
           <img
             src={ad[0].image}
             alt="Ad"
-            style={{ width: "900px", height: "80px", marginTop:"20px"}}
+            style={{ width: "1100px", height: "100px"}}
           />
+          </a>
         </div>
       ) : (
         <p>Loading ad...</p>

@@ -74,7 +74,7 @@ const BlogDetails = () => {
             {post.title}
           </h2>
           <img
-            src={post.logo}
+            src={post.media[0].fileUrl}
             alt={post.title}
             className=" mb-2"
             style={{ maxHeight: "300px", minHeight: "100px", width: "400px" }}

@@ -41,11 +41,11 @@ const Header = () => {
     <div className={styles.topMenuParent}>
       <div className={styles.topMenu}>
         <HeaderAds />
-        <div className={styles.topMenuItem} />
+        {/* <div className={styles.topMenuItem} /> */}
         <div className={styles.rectangleParent}>
           <div className={styles.groupChild} />
           <div className={styles.groupItem} />
-          <b className={styles.subscribeNow}>Subscribe Now</b>
+          <b className={styles.subscribeNow} onClick={() => router.push(`/subscription/subscription`)} style={{cursor:"pointer"}}>Subscribe Now</b>
         </div>
         <div className={styles.hamburgerMenu} onClick={toggleSidebar}>
           {/* <div className={styles.hamburgerIcon}> */}
@@ -80,8 +80,18 @@ const Header = () => {
               </a>
             </div>
             <div className={sidebarStyles.navbarItem}>
-              <a href="/contact-us" className={sidebarStyles.navLink}>
+              <a href="/contactus" className={sidebarStyles.navLink}>
                 Contact Us
+              </a>
+            </div>
+            <div className={sidebarStyles.navbarItem}>
+              <a href="/privacypolicy" className={sidebarStyles.navLink}>
+                Privacy Policy
+              </a>
+            </div>
+            <div className={sidebarStyles.navbarItem}>
+              <a href="/termsandconditions" className={sidebarStyles.navLink}>
+                Terms & Conditions
               </a>
             </div>
           </div>
@@ -156,7 +166,7 @@ const Header = () => {
           Directories
         </div>
       </div>
-      <div className={styles.tuesday11052023Parent}>
+      {/* <div className={styles.tuesday11052023Parent}>
         <div className={styles.home}>{formattedDate} |</div>
         <div className={styles.trending}>Trending</div>
         <div className={styles.specials}>Specials</div>
@@ -167,7 +177,7 @@ const Header = () => {
       <div className={styles.rectangleContainer}>
         <div className={styles.groupChild4} />
         <div className={styles.login}>Login</div>
-      </div>
+      </div> */}
     </div>
   );
 };

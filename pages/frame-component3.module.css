@@ -1,118 +1,136 @@
-.featuredContent1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: var(--font-size-21xl);
-  font-weight: 600;
-  display: inline-block;
-  width: 1240px;
-}
-.groupChild {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 364px;
-  height: 177px;
-  object-fit: cover;
-}
-.blogSubtitle,
-.blogTitle {
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  width: 364px;
-}
-.blogTitle {
-  top: 204px;
-  font-weight: 600;
-}
-.blogSubtitle {
-  top: 255px;
-  font-size: var(--font-size-xl);
-  height: 40px;
-}
-.featuredContentInner,
-.groupItem,
-.rectangleParent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 364px;
-  height: 295px;
-}
-.featuredContentInner,
-.groupItem {
-  top: 82px;
-}
-.groupItem {
-  top: 0;
-  width: 365px;
-  height: 177px;
-  object-fit: cover;
-}
-.blogSubtitle1,
-.blogTitle1 {
-  position: absolute;
-  left: 0.32px;
-  display: inline-block;
-  width: 364px;
-}
-.blogTitle1 {
-  top: 204px;
-  font-weight: 600;
-}
-.blogSubtitle1 {
-  top: 255px;
-  font-size: var(--font-size-xl);
-  height: 40px;
-}
-.featuredContentChild,
-.groupInner,
-.rectangleGroup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 365px;
-  height: 295px;
-}
-.featuredContentChild,
-.groupInner {
-  top: 82px;
-  left: 437px;
-}
-.groupInner {
-  top: 0;
-  left: 0.35px;
-  width: 364px;
-  height: 177px;
-  object-fit: cover;
-}
-.featuredContent,
-.groupDiv,
-.rectangleContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 364.35px;
-  height: 295px;
-}
-.featuredContent,
-.groupDiv {
-  top: 82px;
-  left: 874.65px;
-}
-.featuredContent {
-  top: 0;
-  left: 10%;
-  width: 1240px;
-  height: 377px;
-}
+/* frame-component3.module.css */
+
+/* Featured Content Parent Container */
+/* frame-component3.module.css */
+
+/* Featured Content Parent Container */
 .featuredContentParent {
-  position: relative;
-  width: 100%;
-  height: 377px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust the height as needed */
+}
+
+/* Featured Content Container */
+.featuredContent {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Featured Content Title */
+.featuredContent1 {
+  font-size: 36px;
+  font-family: 'poppins';
+  margin-bottom: 20px;
+}
+
+/* Blog Item Container */
+.rectangleParent {
+  width: 300px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Border color */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Blog Image */
+.groupChild {
+  width: 90%;
+  height: 120px;
+  object-fit: fill; /* Ensure the image fits within the container */
+}
+
+/* Blog Title */
+.blogTitle {
+  font-size: 18px;
+  font-family: 'poppins';
+  font-weight: 500;
+  margin-bottom: 5px;
   text-align: center;
-  font-size: var(--font-size-11xl);
-  color: var(--color-black);
-  font-family: var(--font-poppins);
+}
+
+/* Blog Subtitle */
+.blogSubtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Navigation Buttons Container */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Navigation Buttons */
+.myButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Disabled Navigation Buttons */
+.myButton:disabled {
+  background-color: #ccc; /* Disabled button background color */
+  cursor: not-allowed;
+}
+
+/* Center the buttons horizontally */
+.myButton:first-child {
+  margin-right: auto;
+}
+
+.carouselContainer {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+/* Carousel Wrapper */
+.carouselWrapper {
+  display: flex;
+  height: 350px;
+  max-width: 1000px;
+  transition: transform 0.3s ease; /* Animation for sliding effect */
+}
+
+/* Sliding Buttons */
+.carouselButton1 {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  width: 25px;
+  border-radius: 50%;
+  height: 25px;
+  margin-top: 10%;
+}
+.carouselButton2 {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  width: 25px;
+  border-radius: 50%;
+  height: 25px;
+  margin-top: 10%;
+}
+
+.carouselButton.prev {
+  left: 0;
+}
+
+.carouselButton.next {
+  right: 0;
 }
