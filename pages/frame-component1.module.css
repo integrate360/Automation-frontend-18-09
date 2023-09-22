@@ -1,32 +1,48 @@
-.topMenuChild {
-  position: absolute;
-  top: 28px;
-  left: 296px;
-  width: 1013px;
-  height: 81px;
+.Header {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  font-family: "poppins";
+}
+.logoFull1 {
+  width: 165px;
+  height: 100px;
   object-fit: cover;
 }
-.topMenuItem {
-  position: absolute;
-  top: 0;
-  left: 84px;
-  background-color: #f2f2f2;
-  width: 1600px;
-  height: 30px;
-}
-/* Hamburger Menu */
-.hamburgerMenu {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  width: 30px;
-  z-index: 1;
-  height: 70px;
-  cursor: pointer;
+.logo {
+  background-color: white;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  height: 150px;
+  width: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  box-shadow: -3px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.hrnavbar {
+  background-color: #a1181b;
+  height: 45px;
+  cursor: pointer;
+  color: white;
+  width: 105%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.subscribeNow {
+  width: 100%;
+  height: 45px;
+  font-weight: 600;
+  font-size: 20px;
+  border: white;
+  color: white;
+  background-color: red;
+  border-bottom-left-radius: 20px;
+  margin-left: -15px;
+}
+.hamburgerMenu {
+  z-index: 999;
 }
 
 .hamburgerIcon {
@@ -34,6 +50,7 @@
   height: 5px;
   background-color: #ff0808;
   margin: 4px;
+  z-index: 999;
 }
 
 .hamburgerLine {
@@ -41,292 +58,5 @@
   height: 5px;
   background-color: #ff0808;
   margin: 4px;
-}
-/* Menu Items */
-.menuItems {
-  position: absolute;
-  top: 90px;
-  right: 0;
-  width: 10%;
-  background-color: #fe0101;
-  padding: 10px;
-  border-radius: 5px;
-  transition: 0.3s ease; 
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.menuItem {
-  padding: 5px;
-  cursor: pointer;
-  color: #fff;
-}
-
-.menuItem:hover {
-  background-color: #000000;
-}
-.groupChild {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-firebrick);
-  width: 1160px;
-  height: 50px;
-}
-.groupItem,
-.subscribeNow {
-  position: absolute;
-  top: 0;
-  left: 1140px;
-  width: 200px;
-  height: 50px;
-}
-.groupItem {
-  border-radius: 0 0 0 27px;
-  background-color: var(--color-crimson-100);
-}
-.subscribeNow {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-.groupInner,
-.rectangleDiv {
-  position: absolute;
-  top: 0;
-  height: 29px;
-}
-.groupInner {
-  left: 0;
-  background-color: #c5c5c5;
-  width: 147px;
-}
-.rectangleDiv {
-  left: 147px;
-  background-color: var(--color-darkgray);
-  width: 138px;
-}
-.groupChild1,
-.groupChild2,
-.groupChild3 {
-  position: absolute;
-  top: 0;
-  left: 285px;
-  background-color: #7e7e7e;
-  width: 107px;
-  height: 29px;
-}
-.groupChild2,
-.groupChild3 {
-  left: 392px;
-  background-color: #636363;
-  width: 153px;
-}
-.groupChild3 {
-  left: 545px;
-  background-color: #4a4a4a;
-  width: 135px;
-}
-.featuredNews {
-  position: absolute;
-  top: 4px;
-  left: 14px;
-  font-weight: 600;
-}
-.hotNews,
-.mostPopular,
-.mostWatched,
-.trendingNews {
-  position: absolute;
-  top: 4px;
-  left: 163px;
-  font-weight: 600;
-}
-.hotNews,
-.mostWatched,
-.trendingNews {
-  left: 298px;
-}
-.mostWatched,
-.trendingNews {
-  left: 404px;
-}
-.mostWatched {
-  left: 553px;
-}
-.rectangleGroup {
-  position: absolute;
-  top: 49px;
-  left: 281px;
-  width: 680px;
-  height: 29px;
-  font-size: var(--font-size-mini);
-}
-.rectangleParent {
-  position: absolute;
-  top: 100px;
-  left: 84px;
-  width: 1340px;
-  height: 78px;
-  font-size: 28px;
-}
-.logoChild {
-  position: absolute;
-  top: 0;
-  left: 5%;
-  border-radius: 0 0 var(--br-44xl-5) var(--br-44xl-5);
-  background-color: var(--color-white);
-  box-shadow: -3px 2px 8px rgba(0, 0, 0, 0.1);
-  width: 199px;
-  height: 150px;
-}
-.logoFull1 {
-  position: relative;
-  top: 5px;
-  left: 10px;
-  width: 165px;
-  height: 120px;
-  object-fit: cover;
-}
-.logo {
-  width: 199px;
-  height: 150px;
-  cursor: pointer;
-}
-
-
-.aboutUs,
-.autoExpo,
-.home,
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.aboutUs,
-.autoExpo {
-  left: 95px;
-}
-.autoExpo {
-  left: 192px;
-}
-.events,
-.magazines,
-.pressRelease {
-  position: absolute;
-  top: 0;
-  left: 316px;
-}
-.events,
-.pressRelease {
-  left: 447px;
-}
-.pressRelease {
-  left: 546px;
-}
-/* .contact,
-.homeParent,
-.resources {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 699px;
-}
-.contact,
-.homeParent {
-  left: 827px;
-} */
-.navbar{
-  margin-left: 5px;
-  display:flex ;
-  align-items: center;
-  width: fit-content;
-  color: var(--color-white);
-}
-.homeParent {
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  top: 100px;
-  left: 210px;
-  width: 65%;
-  height: 50px;
-}
-.faqs,
-.more,
-.specials,
-.trending {
-  position: absolute;
-  top: 0;
-  left: 213px;
-}
-.faqs,
-.more,
-.specials {
-  left: 335px;
-}
-.faqs,
-.more {
-  left: 453px;
-}
-.more {
-  left: 731px;
-}
-.tuesday11052023Parent {
-  position: absolute;
-  top: 5px;
-  left: 215px;
-  width: 769px;
-  height: 23px;
-  color: var(--color-black);
-}
-.groupChild4 {
-  top: 0;
-  left: 0;
-  border-radius: 5px;
-  background-color: var(--color-crimson-100);
-}
-.groupChild4,
-.login,
-.rectangleContainer {
-  position: absolute;
-  width: 90px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-}
-.login {
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rectangleContainer {
-  top: 5px;
-  display: flex;
-  align-items: center;
-  left: 1337px;
-  font-size: var(--font-size-3s);
-}
-.topMenu {
-  position: absolute;
-  top: 0;
-  left: 5%;
-  width: 1424px;
-  height: 178px;
-}
-.topMenuParent {
-  position: relative;
-  width: 100%;
-  height: 178px;
-  text-align: center;
-  font-size: var(--font-size-mini);
-  color: var(--color-white);
-  font-family: var(--font-poppins);
+  z-index: 999;
 }

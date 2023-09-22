@@ -18,13 +18,13 @@ const HeaderAds = () => {
   return (
     <div className="header-ad">
       {ad ? (
-        <div>
+        <div style={{height:"100px"}}>
           {ad.name}
           <a href={ad.link} target="_blank" rel="noopener noreferrer">
           <img
             src={ad[0].image}
             alt="Ad"
-            style={{ width: "1100px", height: "100px"}}
+            style={{ width: "1300px", height: "100px", objectFit:"cover"}}
           />
           </a>
         </div>

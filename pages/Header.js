@@ -38,86 +38,8 @@ const Header = () => {
     day: "numeric",
   });
   return (
-    <div className={styles.topMenuParent}>
-      <div className={styles.topMenu}>
-        <HeaderAds />
-        {/* <div className={styles.topMenuItem} /> */}
-        <div className={styles.rectangleParent}>
-          <div className={styles.groupChild} />
-          <div className={styles.groupItem} />
-          <b className={styles.subscribeNow} onClick={() => router.push(`/subscription/subscription`)} style={{cursor:"pointer"}}>Subscribe Now</b>
-        </div>
-        <div className={styles.hamburgerMenu} onClick={toggleSidebar}>
-          {/* <div className={styles.hamburgerIcon}> */}
-          <div className={styles.hamburgerLine} />
-          <div className={styles.hamburgerLine} />
-          <div className={styles.hamburgerLine} />
-          {/* </div> */}
-        </div>
-
-        <div
-          className={`${sidebarStyles.sidebar} ${
-            isSidebarOpen ? sidebarStyles.open : ""
-          }`}
-        >
-          <div className={sidebarStyles.navbarhead}>
-            <img
-              className={styles.logoFull1}
-              alt=""
-              src="/logo-full-11@2x.png"
-              onClick={() => router.push(`/`)}
-            />
-          </div>
-          <div className={sidebarStyles.navbar}>
-            <div className={sidebarStyles.navbarItem}>
-              <a href="/" className={sidebarStyles.navLink}>
-                Home
-              </a>
-            </div>
-            <div className={sidebarStyles.navbarItem}>
-              <a href="/about" className={sidebarStyles.navLink}>
-                About Us
-              </a>
-            </div>
-            <div className={sidebarStyles.navbarItem}>
-              <a href="/contactus" className={sidebarStyles.navLink}>
-                Contact Us
-              </a>
-            </div>
-            <div className={sidebarStyles.navbarItem}>
-              <a href="/privacypolicy" className={sidebarStyles.navLink}>
-                Privacy Policy
-              </a>
-            </div>
-            <div className={sidebarStyles.navbarItem}>
-              <a href="/termsandconditions" className={sidebarStyles.navLink}>
-                Terms & Conditions
-              </a>
-            </div>
-            <div className={sidebarStyles.navbarItem}>
-              <a href="/mediapartner" className={sidebarStyles.navLink}>
-                Media Partner
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* Menu Items */}
-        {isMenuOpen && (
-          <div className={styles.menuItems}>
-            {menuItems.map((item, index) => (
-              <div
-                key={index}
-                className={styles.menuItem}
-                onClick={() => handleMenuItemClick(item.path)}
-              >
-                {item.label}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+    <div className={styles.Header}>
       <div className={styles.logo}>
-        <div className={styles.logoChild} />
         <img
           className={styles.logoFull1}
           alt=""
@@ -125,64 +47,135 @@ const Header = () => {
           onClick={() => router.push(`/`)}
         />
       </div>
-      <div className={styles.homeParent}>
-        {/* <div className={styles.navbar}>Featured</div> */}
-        <div
-          className={styles.navbar}
-          onClick={() => router.push(`/category/products`)}
-        >
-          Products
+      <div>
+        <HeaderAds />
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className={styles.hrnavbar}>
+            <div
+              className={styles.navbar}
+              onClick={() => router.push(`/category/products`)}
+            >
+              Products
+            </div>
+            <div
+              className={styles.navbar}
+              onClick={() => router.push(`/category/interview`)}
+            >
+              Interviews
+            </div>
+            {/* <div className={styles.navbar}>Magazines</div> */}
+            <div
+              className={styles.navbar}
+              onClick={() => router.push(`/category/news`)}
+            >
+              News
+            </div>
+            <div
+              className={styles.navbar}
+              onClick={() => router.push(`/category/casestudy`)}
+            >
+              Case Study
+            </div>
+            <div
+              className={styles.navbar}
+              onClick={() => router.push(`/category/article`)}
+            >
+              Aricles
+            </div>
+            <div
+              className={styles.navbar}
+              onClick={() => router.push(`/events/events`)}
+            >
+              Events
+            </div>
+            <div
+              className={styles.navbar}
+              onClick={() => router.push(`/directory/directories`)}
+            >
+              Directories
+            </div>
+          </div>
+
+          <div style={{ width: "200px" }}>
+            {" "}
+            <button
+              className={styles.subscribeNow}
+              onClick={() => router.push(`/subscription/subscription`)}
+              style={{ cursor: "pointer" }}
+            >
+              Subscribe Now
+            </button>
+          </div>
+          <div style={{width:"30px"}} onClick={toggleSidebar}>
+          {/* <div className={styles.hamburgerIcon}> */}
+          <div className={styles.hamburgerLine} />
+          <div className={styles.hamburgerLine} />
+          <div className={styles.hamburgerLine} />
+          {/* </div> */}
         </div>
-        <div
-          className={styles.navbar}
-          onClick={() => router.push(`/category/interview`)}
-        >
-          Interviews
-        </div>
-        {/* <div className={styles.navbar}>Magazines</div> */}
-        <div
-          className={styles.navbar}
-          onClick={() => router.push(`/category/news`)}
-        >
-          News
-        </div>
-        <div
-          className={styles.navbar}
-          onClick={() => router.push(`/category/casestudy`)}
-        >
-          Case Study
-        </div>
-        <div
-          className={styles.navbar}
-          onClick={() => router.push(`/category/article`)}
-        >
-          Aricles
-        </div>
-        <div
-          className={styles.navbar}
-          onClick={() => router.push(`/events/events`)}
-        >
-          Events
-        </div>
-        <div
-          className={styles.navbar}
-          onClick={() => router.push(`/directory/directories`)}
-        >
-          Directories
         </div>
       </div>
-      {/* <div className={styles.tuesday11052023Parent}>
-        <div className={styles.home}>{formattedDate} |</div>
-        <div className={styles.trending}>Trending</div>
-        <div className={styles.specials}>Specials</div>
-        <div className={styles.faqs}>FAQs</div>
-        <div className={styles.pressRelease}>Advertise With Us</div>
-        <div className={styles.more}>More</div>
+
+      <div
+        className={`${sidebarStyles.sidebar} ${
+          isSidebarOpen ? sidebarStyles.open : ""
+        }`}
+      >
+        <div className={sidebarStyles.navbarhead}>
+          <img
+            className={styles.logoFull1}
+            alt=""
+            src="/logo-full-11@2x.png"
+            onClick={() => router.push(`/`)}
+          />
+        </div>
+        <div className={sidebarStyles.navbar}>
+          <div className={sidebarStyles.navbarItem}>
+            <a href="/" className={sidebarStyles.navLink}>
+              Home
+            </a>
+          </div>
+          <div className={sidebarStyles.navbarItem}>
+            <a href="/about" className={sidebarStyles.navLink}>
+              About Us
+            </a>
+          </div>
+          <div className={sidebarStyles.navbarItem}>
+            <a href="/contactus" className={sidebarStyles.navLink}>
+              Contact Us
+            </a>
+          </div>
+          <div className={sidebarStyles.navbarItem}>
+            <a href="/privacypolicy" className={sidebarStyles.navLink}>
+              Privacy Policy
+            </a>
+          </div>
+          <div className={sidebarStyles.navbarItem}>
+            <a href="/termsandconditions" className={sidebarStyles.navLink}>
+              Terms & Conditions
+            </a>
+          </div>
+          <div className={sidebarStyles.navbarItem}>
+            <a href="/mediapartner" className={sidebarStyles.navLink}>
+              Media Partner
+            </a>
+          </div>
+        </div>
       </div>
-      <div className={styles.rectangleContainer}>
-        <div className={styles.groupChild4} />
-        <div className={styles.login}>Login</div>
-      </div> */}
+      {/* Menu Items */}
+      {isMenuOpen && (
+        <div className={styles.menuItems}>
+          {menuItems.map((item, index) => (
+            <div
+              key={index}
+              className={styles.menuItem}
+              onClick={() => handleMenuItemClick(item.path)}
+            >
+              {item.label}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
